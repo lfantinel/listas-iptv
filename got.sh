@@ -11,5 +11,8 @@ for t in {1..8}; do
 		echo "#EXTINF:-1 tvg-logo=\"https://image.tmdb.org/t/p/w300/3OcQhbrecf4F4pYss2gSirTGPvD.jpg\" group-title=\"TEMPORADA $t\" ,EPISÓDIO $e LEG SD" >> $destino
         echo "http://player1.ultracinefilmes.com/gameofthrones/leg/$t/$e.mp4" >> $destino
 
+        echo "#EXTINF:-1 tvg-logo=\"https://image.tmdb.org/t/p/w300/3OcQhbrecf4F4pYss2gSirTGPvD.jpg\" group-title=\"TEMPORADA $t HD\" ,EPISÓDIO $e" >> $destino
+        echo "http://d2ql5lrloe42iq.cloudfront.net/RedeCanais/RCServer06/ondemand/GMOFTRT0$tEp$e.mp4" >> $destino
+
 	done
 done
