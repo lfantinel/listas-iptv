@@ -15,6 +15,7 @@ echo "#EXTM3U" > $destino
 grep -Pzo ".*group-title=\"FILMES/SERIES\".*\nhttp.*\n" $origem >> $destino
 grep -Pzo ".*group-title=\"REDE HBO\".*\nhttp.*\n" $origem >> $destino
 grep -Pzo ".*group-title=\"GLOBOSAT FILMES\".*\nhttp.*\n" $origem >> $destino
+grep -Pzo ".*group-title=\"LANÇAMENTOS\".*\nhttp.*\n" $origem >> $destino
 
 destino=variedades.m3u
 echo "#EXTM3U" > $destino
@@ -24,12 +25,6 @@ grep -Pzo ".*group-title=\"MUSICAS\".*\nhttp.*\n" $origem >> $destino
 destino=infantil.m3u
 echo "#EXTM3U" > $destino
 grep -Pzo ".*group-title=\"INFANTIL\".*\nhttp.*\n" $origem >> $destino
-
-destino=lancamentos.m3u
-echo "#EXTM3U" > $destinodestino=lancamentos.m3u
-echo "#EXTM3U" > $destino
-grep -Pzo ".*group-title=\"LANÇAMENTOS\".*\nhttp.*\n" $origem >> $destino
-grep -Pzo ".*group-title=\"LANÇAMENTOS\".*\nhttp.*\n" $origem >> $destino
 
 rm $origem
 git add .
