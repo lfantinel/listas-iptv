@@ -11,4 +11,4 @@ grep -Pzo ".*group-title=\"(PREMIERE FUTEBOL)\".*\nhttp.*\n" $origem >> $destino
 rm $origem
 git add .
 git commit -m "update"
-git push -u origem master
+git push
