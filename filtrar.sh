@@ -3,8 +3,7 @@
 origem=edson-flix.m3u
 destino=lista.m3u
 
-wget --remote-encoding=UTF-8 -O $origem http://bit.ly/MATRIXHD
-#http://bit.ly/EDSON-FLIX
+wget --remote-encoding=UTF-8 -O $origem http://bit.ly/EDSON-FLIX
 echo "#EXTM3U" > $destino
 grep -Pzo ".*group-title=\"(ESPORTES)\".*\nhttp.*\n" $origem >> $destino
 grep -Pzo ".*group-title=\"(PREMIERE FUTEBOL)\".*\nhttp.*\n" $origem >> $destino
