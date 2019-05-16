@@ -9,5 +9,5 @@ grep -Pzo ".*group-title=\"(ESPORTES.*)\".*\nhttp.*\n" $origem >> $destino
 grep -Pzo ".*group-title=\"(PREMIERE FUTEBOL)\".*\nhttp.*\n" $origem >> $destino
 rm $origem
 git add .
-git commit -m "update"
+git commit -am "update"
 git push
